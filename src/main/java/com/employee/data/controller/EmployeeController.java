@@ -26,7 +26,7 @@ public class EmployeeController {
 	EmployeeService employeeService; 
 	
 	@GetMapping("/customers")
-	ResponseEntity<List<Employee>> getAllEmployees(){
+	ResponseEntity<List<Employee>> get(){
 		try {
 			List<Employee> list = (List<Employee>) employeeService.get();
 			
